@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shadcn Custom Calendar - Documentation</title>
+		<meta
+			name="description"
+			content="A customizable React calendar component with manual date highlighting using react-day-picker and Tailwind CSS."
+		/>
+		<meta
+			name="keywords"
+			content="React, calendar component, customizable calendar, react-day-picker, Tailwind CSS, JavaScript, TypeScript"
+		/>
+		<meta name="author" content="[Tanay Kedia]" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Shadcn Custom Calendar Documentation</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#usage">Usage</a></li>
+				<li><a href="#customization">Customization</a></li>
+				<li><a href="#contributing">Contributing</a></li>
+				<li><a href="#license">License</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section id="features">
+				<h2>Features</h2>
+				<ul>
+					<li>Customizable color-coded date modifiers for event types</li>
+					<li>TypeScript support for safer development</li>
+					<li>Responsive design with Tailwind CSS</li>
+				</ul>
+			</section>
+			<section id="installation">
+				<h2>Installation</h2>
+				<pre><code>npm install shadcn-custom-calendar</code></pre>
+			</section>
+			<section id="usage">
+				<h2>Usage</h2>
+				<pre><code>
+import { Calendar } from '@/components/Calendar';
+
+function App() {
+  const upcomingEventDates = [/* Dates array */];
+  const ongoingEventDates = [/* Dates array */];
+  const completedEventDates = [/* Dates array */];
+
+  return (
+    &lt;Calendar
+      onDateClick={(date) => console.log(date)}
+      modifiers={{
+        upcoming: upcomingEventDates,
+        ongoing: ongoingEventDates,
+        completed: completedEventDates,
+      }}
+    /&gt;
+  );
+}
+      </code></pre>
+			</section>
+			<section id="customization">
+				<h2>Customization</h2>
+				<p>
+					You can override the styling and functionality by passing your custom
+					CSS classes and properties to the <code>classNames</code> and
+					<code>modifiersClassNames</code> props.
+				</p>
+			</section>
+			<section id="contributing">
+				<h2>Contributing</h2>
+				<p>
+					Contributions are welcome! Please submit a pull request or open an
+					issue on GitHub.
+				</p>
+			</section>
+			<section id="license">
+				<h2>License</h2>
+				<p>
+					MIT License. See the <a href="../LICENSE">LICENSE</a> file for more
+					information.
+				</p>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 [Tanay Kedia]. All rights reserved.</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
