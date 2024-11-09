@@ -1,0 +1,38 @@
+{
+	"name": "shadcn-custom-calendar",
+	"version": "1.0.0",
+	"description": "A customizable React calendar component with manual date highlighting using react-day-picker and Tailwind CSS.",
+	"main": "src/components/Calendar.tsx",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"keywords": [
+		"React",
+		"calendar",
+		"custom calendar",
+		"shadcn",
+		"react-day-picker",
+		"tailwind"
+	],
+	"author": "Tanay Kedia",
+	"license": "MIT",
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-day-picker": "^8.0.0",
+		"react-dom": "^18.2.0",
+		"next": "^13.0.0",
+		"typescript": "^5.0.0",
+		"tailwindcss": "^3.3.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.0",
+		"@types/node": "^20.0.0",
+		"eslint": "^8.0.0",
+		"eslint-config-next": "^13.0.0",
+		"postcss": "^8.4.0",
+		"autoprefixer": "^10.4.0"
+	}
+}
